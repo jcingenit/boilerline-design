@@ -138,6 +138,12 @@
   git pull
   npm ci
   npm run build
+
+  pm2 start ecosystem.config.js --env production
+  pm2 save
+  pm2 startup   # follow the printed command
+
+  npm run build
   pm2 reload boilerline
   ```
   
