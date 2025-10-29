@@ -1,0 +1,35 @@
+RewriteEngine On
+RewriteBase /
+
+# Prevent directory listing
+Options -Indexes
+
+# SPA routing: serve index.html for all non-file, non-directory requests
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+
+# Cache static assets aggressively (adjust as needed)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|otf|pdf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(?:html)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# Useful MIME types
+AddType application/manifest+json .webmanifest
+AddType image/avif .avif
+AddType image/webp .webp
+
+# Optional compression (enabled only if modules are available)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+
