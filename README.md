@@ -147,3 +147,59 @@
   pm2 reload boilerline
   ```
   
+  ---
+  
+  ## Deploying to Cloudways (PHP Application) via GitHub
+  
+  Cloudways PHP apps serve files from `public_html/`. This repo is a Vite React static site. The easiest approach is to deploy a branch that already contains the built static files at the repository root (including `.htaccess` for SPA routing). This repository includes:
+  
+  - A GitHub Actions workflow that builds on every push to `main` and publishes the build output to a branch named `cloudways-dist`.
+  - A `.htaccess` under `public/.htaccess` that is copied into the build so SPA routes work on Apache.
+  - Utility scripts to prepare a local build for Cloudways if you prefer a manual approach.
+  
+  ### Option A: GitHub Actions automated deployment branch
+  1) Push your changes to `main`.
+  2) GitHub Actions builds and publishes the static build to the `cloudways-dist` branch (created automatically), with `.htaccess` included at the root.
+  3) In Cloudways:
+     - Create a PHP application (or open your existing one).
+     - Go to “Deployment Via Git”.
+     - Connect your GitHub account/repo.
+     - Set “Branch” to `cloudways-dist`.
+     - Set “Deployment Path” to `public_html` (default for PHP apps).
+     - Click “Deploy”. After the first deploy, use “Pull” to update.
+  
+  Notes:
+  - The `cloudways-dist` branch contains only the final `build/` contents at the repository root so Apache serves `index.html`, assets, and `.htaccess` correctly.
+  - If you need to force a rebuild/publish, use the “Run workflow” button on GitHub (Actions tab → “Build and Publish for Cloudways”).
+  
+  ### Option B: Manual local build to root and commit
+  If you prefer to commit built files directly to the branch Cloudways pulls from:
+  
+  ```bash
+  npm ci
+  npm run deploy:root   # builds and overlays build/ into repo root and copies .htaccess
+  git add -A
+  git commit -m "Build: overlay build to root for Cloudways"
+  git push origin <branch-used-by-cloudways>
+  ```
+  
+  In Cloudways “Deployment Via Git”, target that branch and deploy to `public_html`.
+  
+  ### Option C: Manual local build to `public_html` folder
+  This keeps built files in a dedicated `public_html/` directory (useful if you archive the repo to a server directly):
+  
+  ```bash
+  npm ci
+  npm run deploy:prepare   # builds to build/ and copies into public_html/ + .htaccess
+  # upload or use this folder as your app's document root content
+  ```
+  
+  ### SPA routing and caching
+  - The included `.htaccess` handles SPA fallback to `index.html` and sets long cache for static assets while avoiding caching `html`.
+  - If you change asset caching policy, edit `public/.htaccess` and it will flow into the build automatically.
+  
+  ### Common Cloudways checks
+  - Ensure the application type is PHP so the webroot is `public_html`.
+  - If you see 404s on client routes, confirm `.htaccess` is present in `public_html` and that you deployed the `cloudways-dist` branch or used `npm run deploy:root`.
+  - If assets don’t refresh, clear Varnish (if enabled) and browser cache. You can also adjust cache headers in `.htaccess`.
+
