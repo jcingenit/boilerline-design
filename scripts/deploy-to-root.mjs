@@ -3,6 +3,7 @@ import { join } from 'path';
 
 const repoRoot = process.cwd();
 const buildDir = join(repoRoot, 'build');
+const publicHtaccess = join(repoRoot, 'public', '.htaccess');
 
 function copyRecursive(src, dest) {
   const entries = readdirSync(src, { withFileTypes: true });
@@ -38,5 +39,11 @@ if (existsSync(devIndex) && !existsSync(backupIndex)) {
 // Copy build to repo root (overwrites assets, index.html, etc.)
 copyRecursive(buildDir, repoRoot);
 console.log('Copied build/ contents to repo root for Cloudways public_html');
+
+// Ensure .htaccess exists at root (copy from public/ if present)
+if (existsSync(publicHtaccess)) {
+  copyFileSync(publicHtaccess, join(repoRoot, '.htaccess'));
+  console.log('Ensured .htaccess at repo root');
+}
 
 

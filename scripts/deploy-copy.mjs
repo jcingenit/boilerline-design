@@ -1,4 +1,4 @@
-import { rmSync, mkdirSync, readdirSync, statSync, copyFileSync } from 'fs';
+import { rmSync, mkdirSync, readdirSync, statSync, copyFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -7,6 +7,7 @@ const __dirname = dirname(__filename);
 const repoRoot = join(__dirname, '..');
 const buildDir = join(repoRoot, 'build');
 const targetDir = join(repoRoot, 'public_html');
+const publicHtaccess = join(repoRoot, 'public', '.htaccess');
 
 function copyRecursive(src, dest) {
   const entries = readdirSync(src, { withFileTypes: true });
@@ -38,5 +39,11 @@ try {
 // Copy build -> public_html
 copyRecursive(buildDir, targetDir);
 console.log('Copied build/ to public_html/');
+
+// Ensure .htaccess exists in public_html (copy from public/ if present)
+if (existsSync(publicHtaccess)) {
+  copyFileSync(publicHtaccess, join(targetDir, '.htaccess'));
+  console.log('Ensured .htaccess in public_html/');
+}
 
 
