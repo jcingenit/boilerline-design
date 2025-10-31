@@ -1,3 +1,14 @@
+Options -Multiviews
+RewriteEngine On
+
+# Serve existing files/directories directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# SPA fallback: send everything else to index.html
+RewriteRule ^ index.html [L]
+
 RewriteEngine On
 RewriteBase /
 
