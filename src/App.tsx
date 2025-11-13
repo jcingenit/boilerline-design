@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { HomePage } from "./pages/HomePage";
@@ -25,10 +25,17 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger fade-in animation after component mounts
+    setIsLoaded(true);
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-background flex flex-col">
+      <div className={`min-h-screen bg-background flex flex-col ${isLoaded ? 'fade-in' : ''}`} style={!isLoaded ? { opacity: 0 } : undefined}>
         <Header />
         
         <main className="flex-1">
