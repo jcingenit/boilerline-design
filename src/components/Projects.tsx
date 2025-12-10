@@ -5,6 +5,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Badge } from "./ui/badge";
 
 interface Project {
+  id: string;
   title: string;
   description: string;
   status: string;
@@ -18,10 +19,6 @@ interface ProjectsProps {
 }
 
 export function Projects({ projects }: ProjectsProps) {
-  const getProjectSlug = (title: string) => {
-    return title.toLowerCase().replace(/\s+/g, '-');
-  };
-
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -37,11 +34,10 @@ export function Projects({ projects }: ProjectsProps) {
           
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => {
-              const slug = getProjectSlug(project.title);
               return (
                 <Link 
-                  key={`project-${index}-${project.title}`}
-                  to={`/projects/${slug}`}
+                  key={`project-${index}-${project.id}`}
+                  to={`/projects/${project.id}`}
                   className="bg-card rounded-xl overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 border-accent hover:border-accent"
                 >
                   <div className="aspect-video bg-card-foreground overflow-hidden relative">

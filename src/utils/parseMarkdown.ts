@@ -242,8 +242,12 @@ export function parseProjectDetail(markdown: string): Project {
     visible = false;
   }
   
-  // Generate ID from title
-  const id = title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  // Generate ID from title (normalize multiple consecutive hyphens)
+  const id = title.toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-') // Normalize multiple consecutive hyphens to single hyphen
+    .replace(/^-|-$/g, ''); // Remove leading/trailing hyphens
   
   // Extract and process year information
   const yearContent = sectionMap['Year'] || '';

@@ -39,6 +39,7 @@ export function HomePage() {
 
   // Convert project data to the format expected by the Projects component
   const projectsForDisplay = allProjects.map(project => ({
+    id: project.id,
     title: project.title,
     description: project.description || project.overview,
     status: project.status,
