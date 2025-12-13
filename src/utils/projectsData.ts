@@ -20,7 +20,7 @@ export async function loadProjects(): Promise<Project[]> {
         const filename = path.split('/').pop()?.replace('.md', '') || 'unknown';
         
         if (typeof content === 'string') {
-          const project = parseProjectDetail(content);
+          const project = parseProjectDetail(content, filename);
           projects.push(project);
           console.log(`✅ Loaded project: ${project.title} (${filename})`);
         } else {
@@ -70,8 +70,11 @@ try {
       // Skip template file
       if (path.includes('PROJECT_TEMPLATE')) continue;
       
+      // Extract filename from path
+      const filename = path.split('/').pop()?.replace('.md', '') || 'unknown';
+      
       if (typeof content === 'string') {
-        const project = parseProjectDetail(content);
+        const project = parseProjectDetail(content, filename);
         projects.push(project);
       }
     } catch (error) {
@@ -106,6 +109,18 @@ export const allProjects = cachedProjects || [];
 export const projectsById: Record<string, Project> = {};
 allProjects.forEach(project => {
   projectsById[project.id] = project;
+  // Debug: Log gallery for Slayter Ridge
+  if (project.title.includes('Slayter Ridge')) {
+    console.log('🔧 projectsById entry for Slayter Ridge:', {
+      id: project.id,
+      title: project.title,
+      hasGallery: !!project.gallery,
+      galleryLength: project.gallery?.length || 0,
+      gallery: project.gallery,
+      fullProject: project
+    });
+    console.log('🔑 Project ID that will be used in URL:', project.id);
+  }
 });
 
 // Query functions for build types
@@ -158,8 +173,11 @@ export function getAllProjectsIncludingHidden(): Project[] {
         // Skip template file and README
         if (path.includes('PROJECT_TEMPLATE') || path.includes('README')) continue;
         
+        // Extract filename from path
+        const filename = path.split('/').pop()?.replace('.md', '') || 'unknown';
+        
         if (typeof content === 'string') {
-          const project = parseProjectDetail(content);
+          const project = parseProjectDetail(content, filename);
           projects.push(project);
         }
       } catch (error) {

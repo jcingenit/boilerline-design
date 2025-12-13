@@ -86,7 +86,7 @@ export function CustomProjectsPage() {
               
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <Badge variant="secondary" className="bg-accent/10 text-accent border-accent px-3 py-1 text-sm">
+                  <Badge variant="outline" className="border-accent bg-primary text-accent px-3 py-1 text-sm">
                     Custom
                   </Badge>
                   <span className="text-sm text-muted-foreground">{project.year}</span>

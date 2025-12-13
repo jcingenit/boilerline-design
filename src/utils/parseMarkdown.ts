@@ -35,6 +35,7 @@ export interface Project {
   digitalExperience?: string[];
   warranty?: string[];
   pdfPacket?: string;
+  gallery?: string[];
 }
 
 
@@ -110,7 +111,7 @@ function extractBulletPoints(content: string): string[] {
 /**
  * Parse a project detail markdown file
  */
-export function parseProjectDetail(markdown: string): Project {
+export function parseProjectDetail(markdown: string, filename?: string): Project {
   if (!markdown || typeof markdown !== 'string') {
     throw new Error('Invalid markdown content for project');
   }
@@ -127,6 +128,14 @@ export function parseProjectDetail(markdown: string): Project {
       sectionMap[section.title] = section.content;
     }
   });
+  
+  // Debug: Log all sections found (only for development)
+  if (process.env.NODE_ENV === 'development' && title.includes('Slayter')) {
+    console.log('📋 Sections found for', title, ':', Object.keys(sectionMap));
+    if (sectionMap['Gallery']) {
+      console.log('📸 Gallery section content:', sectionMap['Gallery']);
+    }
+  }
   
   // Extract features (bullet list)
   const features = extractBulletPoints(sectionMap['Features'] || '');
@@ -228,6 +237,15 @@ export function parseProjectDetail(markdown: string): Project {
   // Extract warranty information
   const warranty = extractBulletPoints(sectionMap['Warranty & Quality Assurance'] || '');
 
+  // Extract gallery images
+  const galleryContent = sectionMap['Gallery'] || '';
+  const gallery = extractBulletPoints(galleryContent);
+  if (gallery.length > 0) {
+    console.log(`📸 Gallery found for ${title}: ${gallery.length} images`, gallery);
+  } else if (galleryContent) {
+    console.log(`⚠️ Gallery section exists but no images found for ${title}. Content:`, galleryContent);
+  }
+
   // Extract PDF packet link
   const pdfPacket = sectionMap['PDF Packet'] || sectionMap['PDF'] || '';
 
@@ -270,37 +288,82 @@ export function parseProjectDetail(markdown: string): Project {
   
   let buildType: 'custom' | 'production';
   
-  // Check explicit Build Type section first
-  if (buildTypeSection.toLowerCase().includes('production')) {
-    buildType = 'production';
-  } else if (buildTypeSection.toLowerCase().includes('custom')) {
-    buildType = 'custom';
+  // Check filename prefix first (highest priority)
+  if (filename) {
+    const filenameLower = filename.toLowerCase();
+    if (filenameLower.startsWith('c-')) {
+      buildType = 'custom';
+    } else if (filenameLower.startsWith('p-')) {
+      buildType = 'production';
+    } else {
+      // If filename doesn't match prefix pattern, continue to other checks
+      // Check explicit Build Type section
+      if (buildTypeSection.toLowerCase().includes('production')) {
+        buildType = 'production';
+      } else if (buildTypeSection.toLowerCase().includes('custom')) {
+        buildType = 'custom';
+      } else {
+        // Enhanced fallback logic
+        const contentToCheck = `${competition} ${status} ${overview} ${description}`.toLowerCase();
+        
+        // Production indicators
+        const productionIndicators = [
+          'nahb', 'competition', 'student competition', 'award', 'winner', 'finalist',
+          'production', 'community', 'development', 'residential', 'housing',
+          'feasibility', 'design development', 'landmark homes', 'purdue'
+        ];
+        
+        // Custom indicators
+        const customIndicators = [
+          'custom', 'bespoke', 'unique', 'one-of-a-kind', 'personal', 'individual',
+          'showcase', 'demonstration', 'prototype', 'experimental'
+        ];
+        
+        const productionScore = productionIndicators.reduce((score, indicator) => 
+          score + (contentToCheck.includes(indicator) ? 1 : 0), 0
+        );
+        
+        const customScore = customIndicators.reduce((score, indicator) => 
+          score + (contentToCheck.includes(indicator) ? 1 : 0), 0
+        );
+        
+        buildType = productionScore >= customScore ? 'production' : 'custom';
+      }
+    }
   } else {
-    // Enhanced fallback logic
-    const contentToCheck = `${competition} ${status} ${overview} ${description}`.toLowerCase();
-    
-    // Production indicators
-    const productionIndicators = [
-      'nahb', 'competition', 'student competition', 'award', 'winner', 'finalist',
-      'production', 'community', 'development', 'residential', 'housing',
-      'feasibility', 'design development', 'landmark homes', 'purdue'
-    ];
-    
-    // Custom indicators
-    const customIndicators = [
-      'custom', 'bespoke', 'unique', 'one-of-a-kind', 'personal', 'individual',
-      'showcase', 'demonstration', 'prototype', 'experimental'
-    ];
-    
-    const productionScore = productionIndicators.reduce((score, indicator) => 
-      score + (contentToCheck.includes(indicator) ? 1 : 0), 0
-    );
-    
-    const customScore = customIndicators.reduce((score, indicator) => 
-      score + (contentToCheck.includes(indicator) ? 1 : 0), 0
-    );
-    
-    buildType = productionScore >= customScore ? 'production' : 'custom';
+    // No filename provided, use existing logic
+    // Check explicit Build Type section first
+    if (buildTypeSection.toLowerCase().includes('production')) {
+      buildType = 'production';
+    } else if (buildTypeSection.toLowerCase().includes('custom')) {
+      buildType = 'custom';
+    } else {
+      // Enhanced fallback logic
+      const contentToCheck = `${competition} ${status} ${overview} ${description}`.toLowerCase();
+      
+      // Production indicators
+      const productionIndicators = [
+        'nahb', 'competition', 'student competition', 'award', 'winner', 'finalist',
+        'production', 'community', 'development', 'residential', 'housing',
+        'feasibility', 'design development', 'landmark homes', 'purdue'
+      ];
+      
+      // Custom indicators
+      const customIndicators = [
+        'custom', 'bespoke', 'unique', 'one-of-a-kind', 'personal', 'individual',
+        'showcase', 'demonstration', 'prototype', 'experimental'
+      ];
+      
+      const productionScore = productionIndicators.reduce((score, indicator) => 
+        score + (contentToCheck.includes(indicator) ? 1 : 0), 0
+      );
+      
+      const customScore = customIndicators.reduce((score, indicator) => 
+        score + (contentToCheck.includes(indicator) ? 1 : 0), 0
+      );
+      
+      buildType = productionScore >= customScore ? 'production' : 'custom';
+    }
   }
 
   return {
@@ -322,7 +385,8 @@ export function parseProjectDetail(markdown: string): Project {
     communityHighlights: communityHighlights.length > 0 ? communityHighlights : undefined,
     digitalExperience: digitalExperience.length > 0 ? digitalExperience : undefined,
     warranty: warranty.length > 0 ? warranty : undefined,
-    pdfPacket: pdfPacket || undefined
+    pdfPacket: pdfPacket || undefined,
+    gallery: gallery.length > 0 ? gallery : undefined
   };
 }
 

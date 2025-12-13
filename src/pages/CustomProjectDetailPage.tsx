@@ -7,8 +7,49 @@ import { projectsById } from "../utils/projectsData";
 export function CustomProjectDetailPage() {
   const { id } = useParams<{ id: string }>();
   
+  // ALWAYS log - even if project is null
+  console.log('🎯 CustomProjectDetailPage RENDERED - URL ID:', id);
+  console.log('🎯 All available project IDs:', Object.keys(projectsById));
+  
+  // Debug: Log the ID being used
+  React.useEffect(() => {
+    console.log('🔑 CustomProjectDetailPage - URL ID:', id);
+    console.log('🔑 Available project IDs:', Object.keys(projectsById));
+    if (id) {
+      const foundProject = projectsById[id];
+      console.log('🔑 Found project:', foundProject ? foundProject.title : 'NOT FOUND');
+      if (foundProject) {
+        console.log('🔑 Project has gallery:', !!foundProject.gallery, 'Length:', foundProject.gallery?.length);
+      }
+    }
+  }, [id]);
+  
   // Get the project by ID
   const project = id ? projectsById[id] : null;
+  
+  // Log even if project is null
+  console.log('🎯 Project from projectsById:', project ? project.title : 'NULL');
+  
+  // Debug: Log project data
+  React.useEffect(() => {
+    if (project) {
+      console.log('🔍 Project data:', {
+        id: project.id,
+        title: project.title,
+        hasGallery: !!project.gallery,
+        galleryLength: project.gallery?.length || 0,
+        gallery: project.gallery,
+        galleryType: typeof project.gallery,
+        isArray: Array.isArray(project.gallery)
+      });
+      // Force check if gallery should render
+      if (project.gallery && project.gallery.length > 0) {
+        console.log('✅ Gallery should render!', project.gallery);
+      } else {
+        console.log('❌ Gallery will NOT render. project.gallery =', project.gallery);
+      }
+    }
+  }, [project]);
   
   if (!project) {
     return (
@@ -157,6 +198,45 @@ export function CustomProjectDetailPage() {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 {project.description || project.overview}
               </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Gallery - Debug info */}
+      {process.env.NODE_ENV === 'development' && (
+        <section className="py-4 bg-yellow-100 border-2 border-yellow-400">
+          <div className="container mx-auto px-4">
+            <div className="text-sm">
+              <strong>Debug:</strong> gallery exists: {String(!!project.gallery)}, 
+              isArray: {String(Array.isArray(project.gallery))}, 
+              length: {project.gallery?.length || 0},
+              gallery value: {JSON.stringify(project.gallery)}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Gallery - Simplified check */}
+      {project && project.gallery && Array.isArray(project.gallery) && project.gallery.length > 0 && (
+        <section className="py-20 bg-muted/50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto">
+              <h2 className="text-3xl text-foreground mb-12 text-center">Project Gallery</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {project.gallery.map((imagePath, index) => (
+                  <div
+                    key={index}
+                    className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg border-2 border-accent hover:shadow-2xl transition-all duration-300 cursor-pointer group"
+                  >
+                    <ImageWithFallback
+                      src={imagePath}
+                      alt={`${project.title} - Gallery Image ${index + 1}`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>

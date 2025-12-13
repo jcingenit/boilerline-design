@@ -51,12 +51,7 @@ export function Projects({ projects }: ProjectsProps) {
                         {project.status}
                       </Badge>
                       {project.buildType && (
-                        <Badge 
-                          variant={project.buildType === 'production' ? 'default' : 'secondary'}
-                          className={project.buildType === 'production' 
-                            ? 'bg-primary text-primary-foreground px-3 py-1 text-sm' 
-                            : 'bg-accent/10 text-accent border-accent px-3 py-1 text-sm'
-                          }
+                        <Badge variant="outline" className="bg-primary text-white px-3 py-1 text-sm"
                         >
                           {project.buildType === 'production' ? 'Production' : 'Custom'}
                         </Badge>
