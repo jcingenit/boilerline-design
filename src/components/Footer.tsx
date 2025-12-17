@@ -12,7 +12,7 @@ export function Footer() {
               <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
               <img 
                 src="/images/logos/bld-logo-black.png" 
-                alt="BoilerLine Design Logo" 
+                alt="Boiler Line Design Logo" 
                 className="h-10 w-auto"
               />
               <span className="text-2xl font-bold text-black">
@@ -94,7 +94,7 @@ export function Footer() {
           
           <div className="border-t border-accent/20 pt-8 text-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 BoilerLine Design. All rights reserved.
+              © 2025 Boiler Line Design. All rights reserved.
             </p>
           </div>
         </div>

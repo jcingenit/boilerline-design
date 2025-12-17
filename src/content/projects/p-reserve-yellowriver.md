@@ -4,7 +4,7 @@
 /packets/25-26-production.pdf
 
 ## Overview
-The Reserve at Yellow River is a 93-acre planned residential community developed by Boilerline Development in Lilburn, Georgia. Created as the 2026 NAHB Student Competition entry for Purdue University’s Four-Year Program Production Homes, the community is designed to serve first-time home buyers and established families with flexible floor plans, modern amenities, and strong community-focused infrastructure.
+The Reserve at Yellow River is a 93-acre planned residential community developed by Boiler Line Development in Lilburn, Georgia. Created as the 2026 NAHB Student Competition entry for Purdue University’s Four-Year Program Production Homes, the community is designed to serve first-time home buyers and established families with flexible floor plans, modern amenities, and strong community-focused infrastructure.
 
 ## Status
 Proposed

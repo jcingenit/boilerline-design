@@ -48,7 +48,7 @@ export function Header() {
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <img 
               src="/images/logos/bld-logo-white.png" 
-              alt="BoilerLine Design Logo" 
+              alt="Boiler Line Design Logo" 
               className="h-10 w-auto"
             />
             <span className="text-2xl font-bold text-primary-foreground">

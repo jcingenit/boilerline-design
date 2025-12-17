@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'boilerline',
+      name: 'boiler-line-design',
       script: 'npx',
       args: 'serve -s build -l 3000',
       cwd: './',

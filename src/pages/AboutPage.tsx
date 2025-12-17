@@ -32,7 +32,7 @@ export function AboutPage() {
                 <h2 className="text-3xl text-foreground mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Founded at Purdue University, BoilerLine Design represents the culmination of innovative thinking and practical engineering excellence. Our team brings together students from diverse engineering disciplines, united by a common goal: to revolutionize affordable housing through sustainable design.
+                    Founded at Purdue University, Boiler Line Design represents the culmination of innovative thinking and practical engineering excellence. Our team brings together students from diverse engineering disciplines, united by a common goal: to revolutionize affordable housing through sustainable design.
                   </p>
                   <p>
                     Since our inception, we've competed in the prestigious NAHB Student Competition, earning recognition for our innovative approaches to modern housing challenges. Our projects blend cutting-edge technology with practical solutions that address real-world needs.

@@ -32,7 +32,7 @@ export function CompetitionPage() {
                     Teams from across the nation compete in categories including sustainability, affordability, innovation, and livability. The competition provides students with hands-on experience in all aspects of home construction and design.
                   </p>
                   <p>
-                    BoilerLine Design has consistently earned recognition in this prestigious competition, demonstrating Purdue's commitment to excellence in engineering and sustainable design.
+                    Boiler Line Design has consistently earned recognition in this prestigious competition, demonstrating Purdue's commitment to excellence in engineering and sustainable design.
                   </p>
                 </div>
               </div>
