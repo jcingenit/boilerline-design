@@ -97,14 +97,6 @@ export function CustomProjectDetailPage() {
                 <p className="text-xl text-muted-foreground mb-8">
                   {project.overview || project.description}
                 </p>
-                <div className="flex gap-4">
-                  <button className="bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300">
-                    View Gallery
-                  </button>
-                  <button className="border-2 border-accent text-foreground px-6 py-3 rounded-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300">
-                    Start Your Project
-                  </button>
-                </div>
               </div>
               <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border-4 border-accent">
                 <ImageWithFallback
@@ -122,72 +114,40 @@ export function CustomProjectDetailPage() {
        {project.pdfPacket && (
          <section className="py-20 bg-muted/50">
            <div className="container mx-auto px-4">
-             <div className="max-w-6xl mx-auto">
-               <div className="bg-card border-2 border-accent rounded-xl p-8">
-                 <div className="flex items-center gap-4 mb-6">
-                   <div className="p-3 rounded-lg">
-                     <FileText className="w-8 h-8 text-accent" />
+             <div className="max-w-4xl mx-auto">
+               <div className="bg-card border-2 border-accent rounded-xl p-8 text-center">
+                 <div className="flex flex-col items-center gap-6">
+                   <div className="p-4 rounded-lg">
+                     <FileText className="w-12 h-12 text-accent" />
                    </div>
                    <div>
-                     <h2 className="text-3xl text-foreground mb-2">Project Portfolio</h2>
-                     <p className="text-muted-foreground">
-                       View our detailed project portfolio with design concepts, construction details, and project timeline.
+                     <h2 className="text-3xl text-foreground mb-4">Project Information Packet</h2>
+                     <p className="text-lg text-muted-foreground mb-6 max-w-2xl">
+                       Access our comprehensive project packet with detailed specifications, floor plans, development information, and all the essential details you need to understand this project. Download the PDF to view complete documentation.
                      </p>
                    </div>
-                 </div>
-                 
-                 {/* Download Button */}
-                 <div className="text-center">
-                   <a
-                     href={project.pdfPacket.startsWith('http') ? project.pdfPacket : `${window.location.origin}${project.pdfPacket}`}
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors"
-                   >
-                     <Download className="w-4 h-4" />
-                     Download Project Portfolio (PDF)
-                   </a>
+                   
+                   {/* Download Button */}
+                   <div className="space-y-3">
+                     <a
+                       href={project.pdfPacket.startsWith('http') ? project.pdfPacket : `${window.location.origin}${project.pdfPacket}`}
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-8 py-4 rounded-lg hover:bg-accent/90 transition-colors text-lg font-medium"
+                     >
+                       <Download className="w-5 h-5" />
+                       Download Project Packet (PDF)
+                     </a>
+                     <p className="text-sm text-muted-foreground">
+                       The packet will open in a new window for your convenience.
+                     </p>
+                   </div>
                  </div>
                </div>
              </div>
            </div>
          </section>
        )}
-
-       {/* Project Stats */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl text-foreground mb-12 text-center">Project Details</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-card border-2 border-accent rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">
-                  {project.specifications?.["Total Area"] || "N/A"}
-                </div>
-                <div className="text-muted-foreground">Total Area</div>
-              </div>
-              <div className="bg-card border-2 border-accent rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">
-                  {project.specifications?.["Construction Time"] || "N/A"}
-                </div>
-                <div className="text-muted-foreground">Build Time</div>
-              </div>
-              <div className="bg-card border-2 border-accent rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">
-                  {project.specifications?.["Energy Rating"] || "N/A"}
-                </div>
-                <div className="text-muted-foreground">Energy Rating</div>
-              </div>
-              <div className="bg-card border-2 border-accent rounded-lg p-6 text-center">
-                <div className="text-3xl font-bold text-accent mb-2">
-                  {project.specifications?.["Build Cost"] || "N/A"}
-                </div>
-                <div className="text-muted-foreground">Total Cost</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Description */}
       {project.description && (
@@ -203,15 +163,22 @@ export function CustomProjectDetailPage() {
         </section>
       )}
 
-      {/* Gallery - Debug info */}
-      {process.env.NODE_ENV === 'development' && (
-        <section className="py-4 bg-yellow-100 border-2 border-yellow-400">
+      {/* Specifications */}
+      {Object.keys(project.specifications).length > 0 && (
+        <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="text-sm">
-              <strong>Debug:</strong> gallery exists: {String(!!project.gallery)}, 
-              isArray: {String(Array.isArray(project.gallery))}, 
-              length: {project.gallery?.length || 0},
-              gallery value: {JSON.stringify(project.gallery)}
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl text-foreground mb-8">Technical Specifications</h2>
+              <div className="bg-white from-accent/10 to-transparent p-8 rounded-xl border-2 border-accent">
+                <div className="grid md:grid-cols-2 gap-6">
+                  {Object.entries(project.specifications).map(([key, value]) => (
+                    <div key={key}>
+                      <h4 className="text-sm text-accent mb-2">{key}</h4>
+                      <p className="text-lg text-foreground">{value}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -277,27 +244,6 @@ export function CustomProjectDetailPage() {
         </section>
       )}
 
-      {/* Specifications */}
-      {Object.keys(project.specifications).length > 0 && (
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl text-foreground mb-8">Technical Specifications</h2>
-              <div className="bg-white from-accent/10 to-transparent p-8 rounded-xl border-2 border-accent">
-                <div className="grid md:grid-cols-2 gap-6">
-                  {Object.entries(project.specifications).map(([key, value]) => (
-                    <div key={key}>
-                      <h4 className="text-sm text-accent mb-2">{key}</h4>
-                      <p className="text-lg text-foreground">{value}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Home Designs - Custom Layout */}
       {project.homeDesigns && project.homeDesigns.length > 0 && (
         <section className="py-20 bg-muted/50">
@@ -352,7 +298,7 @@ export function CustomProjectDetailPage() {
                   const description = parts.slice(1).join(':').trim();
                   
                   return (
-                    <div key={index} className="bg-muted/50 p-6 rounded-xl border-2 border-transparent hover:border-accent transition-all">
+                    <div key={index} className="bg-white p-6 rounded-xl border-2 border-transparent hover:border-accent transition-all">
                       <div className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                         <div>
@@ -371,45 +317,13 @@ export function CustomProjectDetailPage() {
         </section>
       )}
 
-      {/* Digital Experience */}
-      {project.digitalExperience && project.digitalExperience.length > 0 && (
-        <section className="py-20 bg-muted/50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl text-foreground mb-8">Design Process</h2>
-              <div className="space-y-4">
-                {project.digitalExperience.map((item, index) => {
-                  // Extract feature title and description
-                  const parts = item.split(':');
-                  const rawTitle = parts[0] || '';
-                  const title = rawTitle.replace(/^\*\*|\*\*$/g, '').trim();
-                  const description = parts.slice(1).join(':').trim();
-                  
-                  return (
-                    <div key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
-                      <div>
-                        <h3 className="text-lg text-foreground mb-1">{title}</h3>
-                        {description && (
-                          <p className="text-muted-foreground">{description}</p>
-                        )}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
-
       {/* Warranty & Quality Assurance */}
       {project.warranty && project.warranty.length > 0 && (
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl text-foreground mb-8">Quality Assurance</h2>
-              <div className="bg-gradient-to-br from-accent/10 to-transparent p-8 rounded-xl border-2 border-accent">
+              <div className="bg-white from-accent/10 to-transparent p-8 rounded-xl border-2 border-accent">
                 <div className="space-y-4">
                   {project.warranty.map((item, index) => (
                     <div key={index} className="flex items-center gap-3">

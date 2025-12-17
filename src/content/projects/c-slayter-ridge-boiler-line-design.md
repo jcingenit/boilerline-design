@@ -1,7 +1,7 @@
 # Slayter Ridge - Boiler Line Design Co.
 
 ## PDF Packet
-/packets/NAHB.pdf
+/images/projects/packets/25-26-custom.pdf
 
 ## Overview
 Slayter Ridge is a luxury custom lakefront residence proposed by Boiler Line Design Co. for the 2026 NAHB Custom/Small Home Builder Student Competition, prepared by Purdue University. Located on Lake Martin in Tallapoosa County, Alabama, the project transforms Lot 44 into a refined, site-responsive home that balances attainable luxury, environmental responsibility, and long-term financial viability.
@@ -21,19 +21,17 @@ Situated along the shoreline of Lake Martin between Alexander City and Jacksons 
 The project is designed to meet strong and growing demand for high-end lakefront homes in the Lake Martin market, where limited supply and rising home values reinforce the viability of premium residential development. Slayter Ridge reflects Boiler Line Design Co.’s commitment to disciplined planning, sustainable construction, and community-oriented development.
 
 ## Features
-- **Luxury Lakefront Custom Home** on a 0.97-acre lot  
-- **Oreum Design Concept** inspired by raw ore materials, stone, timber, and light  
-- **Open-Concept Living** with great room, dining, and kitchen oriented toward lake views  
-- **Private Primary Suite Wing** with direct outdoor access  
-- **Second-Level Living** with additional bedrooms, flex space, and overlook to great room  
-- **Three-Car Garage** with integrated mechanical space  
-- **Boat House & Lift** included in scope  
-- **Hybrid Sales Strategy** with in-house listing and buyer agent participation  
+- Luxury Lakefront Custom Home on a 0.97-acre lot  
+- Open-Concept Living with great room, dining, and kitchen oriented toward lake views  
+- Private Primary Suite Wing with direct outdoor access  
+- Second-Level Living
+- Three-Car Garage
+- Boat House & Lift
 
 ## Specifications
 - **Lot**: Lot 44, Miners Cove, Lake Martin  
 - **Lot Size**: 0.97 acres  
-- **Total Living Area**: ~5,000 sq ft  
+- **Total Area**: ~5,000 sq ft  
 - **Bedrooms**: 4  
 - **Bathrooms**: 3.5  
 - **Garage**: 3-Car  

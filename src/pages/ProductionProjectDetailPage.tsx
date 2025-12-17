@@ -71,6 +71,7 @@ export function ProductionProjectDetailPage() {
         </div>
        </section>
 
+
        {/* PDF Packet Section */}
        {project.pdfPacket && (
          <section className="py-20 bg-muted/50">

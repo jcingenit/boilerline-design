@@ -9,14 +9,16 @@ export function Footer() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
-              <Link to="/" className="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity">
-                <div className="bg-primary rounded-lg w-8 h-8 flex items-center justify-center border-2 border-accent">
-                  <Home className="w-4 h-4 text-primary-foreground" />
-                </div>
-                <span className="text-lg text-foreground">
-                  BoilerLine Design
-                </span>
-              </Link>
+              <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+              <img 
+                src="/images/logos/bld-logo-black.png" 
+                alt="BoilerLine Design Logo" 
+                className="h-10 w-auto"
+              />
+              <span className="text-2xl font-bold text-black">
+                Boiler Line Design
+              </span>
+            </Link>
               <p className="text-sm text-muted-foreground">
                 Building innovative housing solutions for tomorrow's challenges.
               </p>

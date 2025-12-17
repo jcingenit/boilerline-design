@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
-import { Home, Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useIsMobile } from "./ui/use-mobile";
 
 export function Header() {
@@ -46,11 +46,13 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-18 max-w-7xl mx-auto">
           <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="bg-primary rounded-lg w-10 h-10 flex items-center justify-center border-2 border-accent">
-              <Home className="w-5 h-5 text-accent" />
-            </div>
-            <span className="text-2xl text-primary-foreground">
-              BoilerLine Design
+            <img 
+              src="/images/logos/bld-logo-white.png" 
+              alt="BoilerLine Design Logo" 
+              className="h-10 w-auto"
+            />
+            <span className="text-2xl font-bold text-primary-foreground">
+              Boiler Line Design
             </span>
           </Link>
           
