@@ -11,45 +11,8 @@ export function CustomProjectDetailPage() {
   console.log('🎯 CustomProjectDetailPage RENDERED - URL ID:', id);
   console.log('🎯 All available project IDs:', Object.keys(projectsById));
   
-  // Debug: Log the ID being used
-  React.useEffect(() => {
-    console.log('🔑 CustomProjectDetailPage - URL ID:', id);
-    console.log('🔑 Available project IDs:', Object.keys(projectsById));
-    if (id) {
-      const foundProject = projectsById[id];
-      console.log('🔑 Found project:', foundProject ? foundProject.title : 'NOT FOUND');
-      if (foundProject) {
-        console.log('🔑 Project has gallery:', !!foundProject.gallery, 'Length:', foundProject.gallery?.length);
-      }
-    }
-  }, [id]);
-  
   // Get the project by ID
   const project = id ? projectsById[id] : null;
-  
-  // Log even if project is null
-  console.log('🎯 Project from projectsById:', project ? project.title : 'NULL');
-  
-  // Debug: Log project data
-  React.useEffect(() => {
-    if (project) {
-      console.log('🔍 Project data:', {
-        id: project.id,
-        title: project.title,
-        hasGallery: !!project.gallery,
-        galleryLength: project.gallery?.length || 0,
-        gallery: project.gallery,
-        galleryType: typeof project.gallery,
-        isArray: Array.isArray(project.gallery)
-      });
-      // Force check if gallery should render
-      if (project.gallery && project.gallery.length > 0) {
-        console.log('✅ Gallery should render!', project.gallery);
-      } else {
-        console.log('❌ Gallery will NOT render. project.gallery =', project.gallery);
-      }
-    }
-  }, [project]);
   
   if (!project) {
     return (
