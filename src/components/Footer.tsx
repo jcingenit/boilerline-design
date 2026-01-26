@@ -94,7 +94,7 @@ export function Footer() {
           
           <div className="border-t border-accent/20 pt-8 text-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 Boiler Line Design. All rights reserved.
+              © 2026 Boiler Line Design. All rights reserved.
             </p>
           </div>
         </div>

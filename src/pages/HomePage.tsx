@@ -70,7 +70,7 @@ export function HomePage() {
         />
       )}
       
-      <Stats stats={statsData} />
+      {/* <Stats stats={statsData} /> */}
       
       <About
         title={aboutData.title}
