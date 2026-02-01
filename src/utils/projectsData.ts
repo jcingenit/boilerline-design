@@ -13,8 +13,8 @@ export async function loadProjects(): Promise<Project[]> {
 
     for (const [path, content] of Object.entries(projectModules)) {
       try {
-        // Skip template file and README
-        if (path.includes('PROJECT_TEMPLATE') || path.includes('README')) continue;
+        // Skip template files and README
+        if (path.includes('PROJECT_TEMPLATE') || path.includes('TEMPLATE_CUSTOM') || path.includes('TEMPLATE_PRODUCTION') || path.includes('README')) continue;
         
         // Extract filename from path for better error reporting
         const filename = path.split('/').pop()?.replace('.md', '') || 'unknown';
@@ -170,8 +170,8 @@ export function getAllProjectsIncludingHidden(): Project[] {
 
     for (const [path, content] of Object.entries(projectModules)) {
       try {
-        // Skip template file and README
-        if (path.includes('PROJECT_TEMPLATE') || path.includes('README')) continue;
+        // Skip template files and README
+        if (path.includes('PROJECT_TEMPLATE') || path.includes('TEMPLATE_CUSTOM') || path.includes('TEMPLATE_PRODUCTION') || path.includes('README')) continue;
         
         // Extract filename from path
         const filename = path.split('/').pop()?.replace('.md', '') || 'unknown';

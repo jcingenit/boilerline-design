@@ -1,79 +1,144 @@
-# The Reserve at Yellow River
+---
+title: "The Reserve at Yellow River"
+slug: "reserve-at-yellow-river"
+location: "Lilburn, Georgia"
+property_type: "Planned Residential Community"
+square_feet: "2,056–2,782"
+bedrooms: "2–4"
+bathrooms: "2–2.5"
+builder: "Boilerline Development"
+status: "Proposed"
+year: 2026
+hero_image: "/images/projects/production/yellowriver.jpg"
+packet: "/packets/25-26-production.pdf"
+project: "production"
+---
 
-## PDF Packet
-/packets/25-26-production.pdf
+# The Reserve at Yellow River  
+## Naturally Connected Living in Lilburn, Georgia
 
-## Overview
-The Reserve at Yellow River is a 93-acre planned residential community developed by Boiler Line Development in Lilburn, Georgia. Created as the 2026 NAHB Student Competition entry for Purdue University’s Four-Year Program Production Homes, the community is designed to serve first-time home buyers and established families with flexible floor plans, modern amenities, and strong community-focused infrastructure.
+The Reserve at Yellow River is a thoughtfully planned residential community located along the scenic Yellow River in Lilburn, Georgia. Designed for first-time homebuyers and established families alike, the neighborhood blends modern homes with preserved natural landscapes, walkable streets, and family-centered amenities.
 
-## Status
-Proposed
-## Year
-2026
+Spanning 93 acres with 153 homesites, this Planned Unit Development offers flexible floorplans, inclusive design features, and a welcoming community atmosphere — all within convenient reach of greater Atlanta.
 
-## Image
-/images/projects/production/yellowriver.jpg
+## Welcome to Lilburn
 
-## Description
-Located adjacent to the Yellow River in Lilburn, Georgia, The Reserve at Yellow River blends natural beauty with innovative neighborhood planning. The development features 153 residential lots across 93 acres, designed as a Planned Unit Development (PUD). Winding roads, uneven natural grades, preserved mature trees, and strategically placed green spaces emphasize harmony with the surrounding landscape.  
+Lilburn offers small-town charm with big-city access.
 
-The community targets buyers seeking family-oriented living with access to strong schools, employment hubs in greater Atlanta, and inclusive neighborhood amenities such as a community pool, playgrounds, and shaded gazebos
+Residents enjoy:
 
-## Features
-- **Planned Unit Development (PUD)** with 153 homesites  
-- **Three-Phase Buildout**: 50–55 homes per phase  
-- **Community Amenities**: Pool, playground, shaded gazebos, landscaped parks  
-- **Tree Preservation Program** with designated Tree-Save Zones  
-- **Bilingual Marketing & Sales** (English & Spanish)  
-- **Three Model Homes** including a sales and design center  
-- **HOA-Managed Community Spaces**  
+- Approximately 30-minute commute to downtown Atlanta  
+- Close proximity to Gwinnett County employment hubs in technology, healthcare, logistics, and education  
+- Nearby Yellow River Wildlife Sanctuary and Lilburn City Park  
+- Annual community events including Lilburn Daze Festival and Spark in the Park  
+- Easy access to Hartsfield-Jackson Atlanta International Airport (~40 minutes)  
 
-## Specifications
-- **Total Acreage**: 93 acres  
-- **Total Lots**: 153  
-- **Phases**: 3 (50–55 homes per phase)  
-- **Average Price per Sq Ft**: $196  
-- **Target Sales Rate**: 5 homes per month  
-- **Location**: Lilburn, Georgia (Gwinnett County)  
-- **Zoning**: Planned Unit Development (PUD)  
+With revitalized downtown development, strong job growth, and expanding local amenities, Lilburn continues to attract families and professionals seeking both opportunity and quality of life.
 
-## Sustainability
-- Double-pane windows  
-- LED lighting throughout  
-- High-efficiency multi-stage HVAC systems  
-- Tankless water heaters (with upgrade options)  
-- ENERGY STAR–rated appliances  
-- Dark-sky compliant street lighting  
-- Water-efficient landscaping  
-- Low-VOC paints and environmentally responsible materials  
-- Comprehensive erosion, sediment, and stormwater control  
-- Waste management and subcontractor sustainability training  
+## Designed for Real Life
+
+The Reserve at Yellow River prioritizes comfort, flexibility, and connection.
+
+### Community Highlights
+
+- 153 homes across a preserved 93-acre site  
+- Three-phase development with parks delivered alongside homes  
+- Community pool, playgrounds, shaded gazebos, and landscaped green spaces  
+- Winding roads and natural grading that follow the existing landscape  
+- Mature tree preservation through designated Tree-Save Zones  
+- HOA-maintained common areas  
+- Bilingual sales and marketing support (English & Spanish)  
+
+Neighborhood planning emphasizes privacy while encouraging everyday interaction through shared outdoor spaces.
 
 ## Home Designs
 
-### Cedar
+Each home is crafted to support modern lifestyles with open layouts, flexible spaces, and family-friendly features. Available floorplans range from approximately 2,056 to 2,782 square feet.
+
+### Cedar  
 2,782 SF | 3 Bedrooms | 2.5 Bathrooms | 3-Car Garage  
-**Image:** /images/projects/production/cedar.png  
-**Stats:** Largest floor plan, primary model for growing families  
+Image: `/images/projects/production/cedar.png`
 
-### Oakleaf
+- Largest floorplan  
+- Ideal for growing families  
+- Spacious gathering areas  
+
+### Oakleaf  
 2,056 SF | 2 Bedrooms | 2.5 Bathrooms | 2-Car Garage  
-**Image:** /images/projects/production/oakleaf.png  
-**Stats:** Entry-level plan for first-time home buyers  
+Image: `/images/projects/production/oakleaf.png`
 
-### The Grove
+- Entry-level design  
+- Perfect for first-time buyers  
+- Efficient layout with modern finishes  
+
+### The Grove  
 2,245 SF | 2 Bedrooms | 2.5 Bathrooms | 2-Car Garage + Storage  
-**Image:** /images/projects/production/the-grove.png  
-**Stats:** Enhanced storage and flexible interior layout  
+Image: `/images/projects/production/the-grove.png`
 
-### Timberline
+- Enhanced storage  
+- Flexible interior spaces  
+- Great balance of size and functionality  
+
+### Timberline  
 2,740 SF | 4 Bedrooms | 2 Bathrooms | 2-Car Garage  
-**Image:** /images/projects/production/timberline.png  
-**Stats:** Largest bedroom count for established families  
+Image: `/images/projects/production/timberline.png`
 
-## Warranty & Quality Assurance
-- **1-Year Workmanship & Materials Warranty**  
-- **2-Year Systems Warranty** (HVAC, plumbing, electrical)  
-- **10-Year Structural Warranty** (framing & foundation)  
-- Daily on-site safety inspections and OSHA compliance  
-- Phased quality control and stormwater protection enforcement
+- Largest bedroom count  
+- Designed for established families
+- Ideal for hosting and multigenerational living  
+
+## Included Interior Features
+
+Homes come standard with:
+
+- Shaw® carpeting in bedrooms  
+- Engineered vinyl plank flooring in main living areas  
+- Cultured marble countertops  
+- Moen® bath fixtures  
+- Ceramic tile tub and shower surrounds  
+- Wi-Fi thermostats and smart entry locks  
+- Stainless steel kitchen appliances  
+- LED recessed lighting  
+- 36" upper cabinets with crown molding  
+
+Optional upgrade packages allow buyers to personalize finishes, flooring, appliances, and technology.
+
+## Sustainability & Energy Efficiency
+
+Every home is designed with performance and environmental responsibility in mind.
+
+### Sustainability Features
+
+- Double-pane Low-E windows  
+- LED lighting throughout  
+- High-efficiency multi-stage HVAC systems  
+- ENERGY STAR® appliances  
+- Tankless water heater options  
+- Dark-sky compliant street lighting  
+- Water-efficient landscaping  
+- Low-VOC interior materials  
+- Comprehensive stormwater and erosion control  
+- Indoor air quality filtration practices  
+
+These features help lower utility costs while creating healthier living environments.
+
+
+## HOA & Warranty
+
+The community HOA maintains landscaping and shared spaces, helping preserve long-term neighborhood value.
+
+Monthly HOA dues: $250
+
+Each home includes:
+
+- 1-Year Workmanship & Materials Warranty  
+- 2-Year Systems Warranty (HVAC, plumbing, electrical)  
+- 10-Year Structural Warranty (framing and foundation)  
+
+## Discover The Reserve at Yellow River
+
+Whether you're purchasing your first home or settling into your forever home, The Reserve at Yellow River offers thoughtfully designed residences in a naturally beautiful setting.
+
+Connect with Boilerline Development to explore floorplans, tour model homes, and learn more about life in Lilburn.
+
+© Boilerline Development; Building Communities with Purpose

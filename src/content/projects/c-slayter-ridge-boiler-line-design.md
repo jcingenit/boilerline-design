@@ -1,61 +1,120 @@
-# Slayter Ridge - Boiler Line Design Co.
+---
+title: "Slayter Ridge – Luxury Lakefront Living"
+slug: "slayter-ridge"
+location: "Lake Martin, Alabama"
+property_type: "Luxury Custom Home"
+square_feet: 5000
+bedrooms: 4
+bathrooms: 3.5
+builder: "Boilerline Design Co."
+status: "Available"
+year: 2026
+image: "/images/projects/custom/slayter-ridge-boiler-line-design.jpg"
+packet: "/images/projects/packets/25-26-custom.pdf"
+project: "custom"
+---
 
-## PDF Packet
-/images/projects/packets/25-26-custom.pdf
+# Slayter Ridge  
+## Luxury Lakefront Living on Lake Martin
 
-## Overview
-Slayter Ridge is a luxury custom lakefront residence proposed by Boiler Line Design Co. for the 2026 NAHB Custom/Small Home Builder Student Competition, prepared by Purdue University. Located on Lake Martin in Tallapoosa County, Alabama, the project transforms Lot 44 into a refined, site-responsive home that balances attainable luxury, environmental responsibility, and long-term financial viability.
+Slayter Ridge is a thoughtfully designed 5,000 sq ft luxury lakefront residence located in Miner’s Cove on Lake Martin. Developed by Boilerline Design Co., the home blends enduring craftsmanship, organic materials, and modern comfort to create a refined retreat deeply connected to its surroundings.
 
-## Status
-Proposed
+Designed for both everyday living and elevated entertaining, Slayter Ridge offers four bedrooms, three and a half bathrooms, expansive indoor–outdoor spaces, and direct water access, delivering a quiet luxury experience grounded in nature.
 
-## Year
-2026
+## About Boilerline Design Co.
 
-## Image
-/images/projects/custom/slayter-ridge-boiler-line-design.jpg
+Boilerline Design Co. is a premier custom home builder specializing in residences that merge purposeful design with lasting craftsmanship.
 
-## Description
-Situated along the shoreline of Lake Martin between Alexander City and Jacksons Gap, Slayter Ridge is envisioned as a sculpted retreat emerging naturally from its lakeside setting. The home emphasizes organic forms, warm natural materials, and strong visual connections to the water. Expansive glazing, stone and wood finishes, and gold-accent lighting blur the boundary between indoor and outdoor living, creating a quiet luxury experience rooted in place.
+Every project begins with a deep understanding of the client’s vision and the land itself. From first sketch to final detail, Boilerline approaches each home with transparency, precision, and care, creating spaces that feel personal, timeless, and deeply rooted in place.
 
-The project is designed to meet strong and growing demand for high-end lakefront homes in the Lake Martin market, where limited supply and rising home values reinforce the viability of premium residential development. Slayter Ridge reflects Boiler Line Design Co.’s commitment to disciplined planning, sustainable construction, and community-oriented development.
+### Our Mission
 
-## Features
-- Luxury Lakefront Custom Home on a 0.97-acre lot  
-- Open-Concept Living with great room, dining, and kitchen oriented toward lake views  
-- Private Primary Suite Wing with direct outdoor access  
-- Second-Level Living
-- Three-Car Garage
-- Boat House & Lift
+To design and build spaces that inspire connection between people, their homes, and the landscapes around them; turning vision into legacy.
 
-## Specifications
-- **Lot**: Lot 44, Miners Cove, Lake Martin  
-- **Lot Size**: 0.97 acres  
-- **Total Area**: ~5,000 sq ft  
-- **Bedrooms**: 4  
-- **Bathrooms**: 3.5  
-- **Garage**: 3-Car  
-- **Total Project Cost**: $1,439,780.24  
-- **Construction Cost per SF**: $273.63  
-- **Total Cost per SF**: $378.89  
+## Location: Lake Martin, Alabama
 
-## Sustainability
-- **Energy Star–Rated Appliances**  
-- **High-Efficiency HVAC Systems**  
-- **LED Lighting Throughout** with layered lighting strategy  
-- **Low-VOC Finishes** for improved indoor air quality  
-- **Durable, Timeless Materials** to reduce lifecycle replacement  
-- **High-Performance Windows** with low-E glazing and insulated frames  
-- **Passive Solar Control** via shading and overhangs  
-- **Storm Water Pollution Prevention Plan (SWPPP)** protecting Lake Martin  
-- **Water-Efficient Fixtures and Landscaping**  
+Situated between Alexander City and Jacksons Gap, Lake Martin is one of Alabama’s most desirable recreational destinations, known for boating, fishing, hiking, and scenic shoreline living.
 
-## Home Design
+Slayter Ridge benefits from:
 
-### Slayter Ridge Custom Plan
-Two Levels | 4 Bed | 3.5 Bath | ~5,000 sq ft  
-**Image:** /images/projects/custom/slayter-ridge-floor-plan.png  
-**Stats:** Open-concept entertainment spaces, private office, dual laundry rooms, lake-oriented great room, and primary suite retreat  
+- Direct lake frontage  
+- Proximity to marinas, parks, and amenities  
+- Easy access to Montgomery, Birmingham, and Auburn  
+- A thriving market for luxury second homes and waterfront retreats  
+
+This unique location blends peaceful lakeside living with convenient access to regional services and attractions.
+
+## Design Concept: Oreum
+
+Oreum draws inspiration from raw ore; rugged on the surface, rich within.
+
+The home is imagined as if carved from the earth itself, emerging from layers of stone, timber, and light. The lake becomes the home’s “gold,” reflected through expansive glazing and open interiors.
+
+Natural materials, warm tones, and sculpted architectural forms create a refined retreat where authenticity meets elegance, transforming the lakefront into a serene, modern sanctuary.
+
+## Floor Plan Overview
+
+Slayter Ridge is organized to balance openness with privacy across two levels.
+
+### Property Specs
+
+- Total Living Area: ~5,000 sq ft  
+- Bedrooms: 4  
+- Bathrooms: 3.5  
+- Garage: 3-car  
+
+### Layout Highlights
+
+- Open-concept great room, kitchen, and dining centered around lake views  
+- Primary suite on main level with private outdoor access  
+- Dedicated office (convertible guest room)  
+- Main laundry plus secondary upper-level laundry  
+- Flexible upstairs lounge space overlooking the great room  
+- Thoughtfully placed pantry, mudroom, and mechanical room for daily efficiency  
+
+Public gathering spaces flow naturally toward the lake, while private retreats provide quiet comfort throughout the home.
+
+## Interior Highlights
+
+### Kitchen
+
+The kitchen serves as the heart of the home, featuring:
+
+- Rich wood cabinetry  
+- Stone-inspired surfaces  
+- Spacious central island for gathering  
+- Open shelving with curated detailing  
+- Breakfast nook with built-in seating  
+
+A perfect balance of function and refinement, designed for both entertaining and everyday living.
+
+### Great Room + Dining
+
+Expansive windows frame the lake as living artwork.
+
+Warm wood tones, sculpted detailing, and a stone fireplace anchor the great room, while the dining area sits within a dramatic double-height window bay — creating an atmosphere that feels both intimate and grand.
+
+### Primary Suite
+
+A private sanctuary designed for restoration:
+
+- Soft neutral palette  
+- Framed lake views  
+- Spa-like bathroom with walk-in shower  
+- Warm metallic accents and stone textures  
+
+Together, bedroom and bath create a serene retreat deeply connected to nature.
+
+## Exterior & Site Design
+
+The exterior responds directly to lakefront living:
+
+- Integrated three-car garage for storage and guest parking  
+- Retaining wall creating level outdoor lawn space  
+- Direct shoreline boathouse for water access  
+- Clean primary façade with layered architectural depth  
+
+Every element supports both function and beauty, maximizing views while stabilizing the sloped terrain.
 
 ## Gallery
 - /images/projects/custom/slayter-ridge-1.png
@@ -68,9 +127,28 @@ Two Levels | 4 Bed | 3.5 Bath | ~5,000 sq ft
 - /images/projects/custom/slayter-ridge-8.png
 - /images/projects/custom/slayter-ridge-9.png
 
-## Warranty & Quality Assurance
-- OSHA-compliant jobsite safety enforcement  
-- Site-specific safety training and weekly toolbox talks  
-- Structured inspection schedule at major construction milestones  
-- Local building and environmental compliance verification  
-- Phased quality control throughout construction lifecycle  
+## Sustainability & Performance
+
+Slayter Ridge integrates site-responsive design strategies that enhance comfort while reducing environmental impact.
+
+### Sustainability Features
+
+- Energy-efficient LED lighting throughout  
+- High-performance low-E windows and insulated frames  
+- Deep overhangs and shading to control solar exposure  
+- Energy Star–rated appliances  
+- Natural daylight optimization through window placement  
+- Low-VOC interior finishes  
+- Durable, regionally sourced materials where possible  
+
+The home follows a Cradle-to-Cradle philosophy — prioritizing materials that can be reused or recycled, modular construction assemblies, and long-life exterior systems to reduce future waste.
+
+## Schedule a Private Showing
+
+Interested in learning more about Slayter Ridge?
+
+Contact Boilerline Design Co. to schedule a private tour or request additional information.
+
+**Email:** info@boilerlinedesign.co  
+**Phone:** (123) 456-7890  
+

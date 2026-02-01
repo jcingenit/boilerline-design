@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ProductionProjectDetailPage } from "./ProductionProjectDetailPage";
 import { CustomProjectDetailPage } from "./CustomProjectDetailPage";
+import { FrontmatterProjectDetailPage } from "./FrontmatterProjectDetailPage";
 import { projectsById } from "../utils/projectsData";
 
 export function ProjectDetailPage() {
@@ -33,7 +34,12 @@ export function ProjectDetailPage() {
     );
   }
 
-  // Route to appropriate component based on build type
+  // Route to appropriate component based on project type
+  if (project.isFrontmatter && project.frontmatterProject) {
+    console.log('🚪 Routing to: FrontmatterProjectDetailPage');
+    return <FrontmatterProjectDetailPage project={project.frontmatterProject} />;
+  }
+  
   console.log('🚪 Routing to:', project.buildType === 'production' ? 'ProductionProjectDetailPage' : 'CustomProjectDetailPage');
   if (project.buildType === 'production') {
     return <ProductionProjectDetailPage />;

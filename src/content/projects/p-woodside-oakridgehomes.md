@@ -1,75 +1,149 @@
-# Woodside – Oak Ridge Homes
+---
+title: "Woodside – Oak Ridge Homes"
+slug: "woodside"
+location: "Georgetown, Texas"
+property_type: "Single-Family Residential Community"
+square_feet: "2,056–2,782"
+bedrooms: "2–4"
+bathrooms: "2–2.5"
+builder: "Oak Ridge Homes"
+status: "Completed"
+year: 2025
+hero_image: "/images/projects/production/oakridge.png"
+packet: "/images/projects/packets/24-25-production.pdf"
+certification: "NGBS Gold"
+project: "production"
+---
 
-## PDF Packet
-/images/projects/packets/24-25-production.pdf
+# Woodside  
+## Hill Country Living, Designed for Modern Families
 
-## Overview
-Woodside by Oak Ridge Homes is an exclusive 138-home community nestled among the rolling oak-covered hills of Central Texas. Combining modern design with the tranquility of natural surroundings, Woodside offers an elevated lifestyle defined by energy efficiency, comfort, and connection.
+Woodside by Oak Ridge Homes is a thoughtfully planned 138-home community located just north of Georgetown, Texas, offering the perfect blend of peaceful countryside living and everyday city convenience.
 
-Developed in collaboration with Purdue University for the 2024–2025 NAHB Student Competition, the project reflects the next generation of sustainable production housing in the American South.
+Set among rolling oak-covered hills on a scenic 40-acre site, Woodside was designed for young professionals, growing families, and first-time buyers seeking comfort, efficiency, and connection. Developed in collaboration with Purdue University for the 2024–2025 NAHB Student Competition, Woodside represents the next generation of sustainable production housing in Central Texas.
 
-## Status
-Completed
+## Welcome Home to Georgetown
 
-## Year
-2025
+Woodside is ideally positioned just:
 
-## Image
-/images/projects/production/oakridge.png
+- 10 minutes from downtown Georgetown  
+- 30 minutes from Austin’s major employers and entertainment  
+- Minutes from Lake Georgetown, hiking trails, and public parks  
 
-## Description
-Located just 10 minutes from Georgetown and 30 minutes from downtown Austin, Woodside provides the perfect balance between peaceful countryside living and convenient city access. Each home is crafted to high energy and design standards, blending timeless architecture with smart home technologies that enhance daily life.
+Residents enjoy access to highly rated Williamson County schools, abundant dining and shopping, multiple golf courses, nearby hospitals, and a strong local job market, all while coming home to a quiet, tree-lined neighborhood.
 
-With NGBS Gold certification, a family-friendly environment, and proximity to outdoor recreation at Lake Georgetown, Woodside sets a new benchmark for efficient, community-centered residential design in Central Texas.
+This location delivers the rare balance of outdoor lifestyle, suburban calm, and urban accessibility.
 
-## Features
-- **Four Distinct Floorplans**: The Oakleaf, Grove, Timberline, and Cedar — each tailored to different family sizes and lifestyles.
-- **Smart Home Integration**: Programmable lighting, learning thermostats, and mobile-access security for effortless living.
-- **Energy Efficiency**: HERS ratings in the 50s, LED lighting, tankless water heaters, and high-performance insulation systems.
-- **Community Design**: Tree-lined streets, dual sidewalks, and landscaped pocket parks promote neighbor connection and outdoor activity.
-- **Prime Location**: 10 minutes to downtown Georgetown, 30 minutes to Austin’s major employers, shopping, and entertainment.
+## A Community Built for Connection
 
-## Specifications
-**Total Homes**: 138
-**Site Area**: ~40 acres
-**Floorplans**: 4 ranch-style models (2–4 bedrooms)
-**Construction Cost**: Average $175 per sq ft
-**Energy Rating**: HERS 54–58
-**Certification**: NGBS Gold Certified
+Woodside was designed to feel both private and neighborly.
 
-## Sustainability: 
-**NGBS Gold Certified Construction**
-**Smart Thermostats & LED Lighting**
-**Tankless Water Heaters & Double-Glazed Windows**
-**EV Charging Capability**
-**High-Performance Insulation & Air Sealing**
-**Low-VOC Materials & Real-Time Energy Monitoring**
-**Estimated 40–50% Energy Cost Savings**
+### Community Highlights
+
+- Tree-lined streets with sidewalks on both sides  
+- Landscaped pocket parks and shared green spaces  
+- Traffic-calming street design for safer play and walking  
+- Oak tree restoration throughout common areas  
+- Family-friendly layout encouraging outdoor activity  
+
+Every homesite is thoughtfully placed to maximize privacy while fostering a close-knit neighborhood atmosphere.
+
+## Smart Homes. Sustainable Living.
+
+Every Woodside home is built with comfort, efficiency, and future-ready technology in mind.
+
+### Energy & Sustainability Features
+
+- NGBS Gold Certified construction  
+- HERS ratings between 54–58  
+- Smart thermostats and programmable lighting  
+- Tankless water heaters  
+- Double-glazed high-performance windows  
+- High-performance insulation and air sealing  
+- EV charging capability in garages  
+- Low-VOC interior materials  
+- Blower door and duct blaster testing for energy efficiency  
+
+Homeowners can expect an estimated **40–50% reduction in energy costs**, healthier indoor air quality, and long-term durability.
+
+Optional sustainable upgrades allow buyers to further personalize their home.
 
 ## Home Designs
-### The Oakleaf
-Ranch | 2 Bed | 2.5 Bath | 2,056 sq ft
-**Image:** /images/projects/production/oakridge-oakleaf.png
-**Stats:** Energy Rating: HERS 58, Garage: 2-Car, Stories: 1
 
-### The Grove
-Ranch | 2 Bed | 2.5 Bath | 2,245 sq ft (+ Storage Garage)
-**Image:** /images/projects/production/oakridge-grove.png
-**Stats:** Energy Rating: HERS 56, Garage: 2-Car + Storage, Stories: 1
+Woodside offers four ranch-style homes ranging from 2,056 to 2,782 square feet — each crafted to support modern living with open layouts, natural light, and flexible spaces.
 
-### The Timberline
-Ranch | 4 Bed | 2 Bath | 2,740 sq ft
-**Image:** /images/projects/production/oakridge-timberline.png
-**Stats:** Energy Rating: HERS 55, Garage: 2-Car, Stories: 1
+### The Oakleaf  
+Ranch | 2 Bed | 2.5 Bath | 2,056 sq ft  
+Image: `/images/projects/production/oakridge-oakleaf.png`
 
-### The Cedar
-Ranch | 3 Bed | 2.5 Bath | 2,782 sq ft
-**Image:** /images/projects/production/oakridge-cedar.png
-**Stats:** Energy Rating: HERS 54, Garage: 3-Car, Stories: 1
+- HERS 58  
+- 2-Car Garage  
+- Ideal for first-time buyers or downsizers  
 
-## Warranty & Quality Assurance
-- Comprehensive 1-Year Coverage
-- 2-Year Systems Warranty (HVAC, Plumbing, Electrical)
-- 6-Year Structural Warranty
-- Third-Party Inspections for Energy & Safety Compliance
-- Rigorous Quality Testing Prior to Move-In
+### The Grove  
+Ranch | 2 Bed | 2.5 Bath | 2,245 sq ft (+ Storage Garage)  
+Image: `/images/projects/production/oakridge-grove.png`
+
+- HERS 56  
+- 2-Car + Storage Garage  
+- Open gathering spaces with added storage flexibility  
+
+### The Timberline  
+Ranch | 4 Bed | 2 Bath | 2,740 sq ft  
+Image: `/images/projects/production/oakridge-timberline.png`
+
+- HERS 55  
+- 2-Car Garage  
+- Perfect for growing families  
+
+### The Cedar  
+Ranch | 3 Bed | 2.5 Bath | 2,782 sq ft  
+Image: `/images/projects/production/oakridge-cedar.png`
+
+- HERS 54  
+- 3-Car Garage  
+- Spacious layout with premium features  
+
+## A Seamless Buying Experience
+
+Oak Ridge Homes modernizes the homebuying journey through both digital and in-person experiences.
+
+Buyers can:
+
+- Virtually tour model homes online  
+- Filter homes by size and features  
+- Schedule tours directly through the website  
+- Customize exterior colors and finishes with the sales team  
+- Visit the on-site sales center and model homes  
+
+Oak Ridge’s client-first approach ensures a smooth path from first tour to move-in, guided by experienced representatives every step of the way.
+
+## Warranty & Peace of Mind
+
+Every Woodside home includes:
+
+- 1-Year Comprehensive Warranty  
+- 2-Year Systems Warranty (HVAC, plumbing, electrical)  
+- 6-Year Structural Warranty  
+- Third-party inspections for energy and safety compliance  
+
+A homeowner association maintains landscaping and shared spaces, helping preserve long-term community value.
+
+## Why Oak Ridge Homes?
+
+Oak Ridge Homes is committed to building better communities through:
+
+- Buyer-centered design  
+- Smart, sustainable construction  
+- Local school sponsorships and community involvement  
+- Quality craftsmanship backed by rigorous testing  
+
+Their carefully crafted process empowers buyers to create a home that reflects their lifestyle — while delivering lasting quality and satisfaction.
+
+## Discover Woodside
+
+Ready to explore Woodside?
+
+Connect with Oak Ridge Homes to tour model homes, review available floorplans, or learn more about life in Georgetown.
+
+© Oak Ridge Homes; Building Smarter Communities in Central Texas
