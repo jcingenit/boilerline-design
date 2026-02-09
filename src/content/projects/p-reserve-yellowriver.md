@@ -19,7 +19,7 @@ project: "production"
 
 The Reserve at Yellow River is a thoughtfully planned residential community located along the scenic Yellow River in Lilburn, Georgia. Designed for first-time homebuyers and established families alike, the neighborhood blends modern homes with preserved natural landscapes, walkable streets, and family-centered amenities.
 
-Spanning 93 acres with 153 homesites, this Planned Unit Development offers flexible floorplans, inclusive design features, and a welcoming community atmosphere — all within convenient reach of greater Atlanta.
+Spanning 93 acres with 153 homesites, this Planned Unit Development offers flexible floorplans, inclusive design features, and a welcoming community atmosphere, all within convenient reach of greater Atlanta.
 
 ## Welcome to Lilburn
 
@@ -53,39 +53,31 @@ Neighborhood planning emphasizes privacy while encouraging everyday interaction 
 
 ## Home Designs
 
-Each home is crafted to support modern lifestyles with open layouts, flexible spaces, and family-friendly features. Available floorplans range from approximately 2,056 to 2,782 square feet.
+Each home is crafted to support modern lifestyles with open layouts, flexible spaces, and family-friendly features. Available floorplans range from approximately 2,034 to 2,782 square feet.
 
-### Cedar  
-2,782 SF | 3 Bedrooms | 2.5 Bathrooms | 3-Car Garage  
-Image: `/images/projects/production/cedar.png`
+### The Briawrood  
+2,268 SF | 3 Bedrooms | 2.5 Bathrooms | 2-Car Garage  
+Image: `/images/projects/production/yellowriver-briarwood.png`
 
-- Largest floorplan  
-- Ideal for growing families  
-- Spacious gathering areas  
+### The Willowbrook 
+2,034 SF | 3 Bedrooms | 2.5 Bathrooms | 2-Car Garage  
+Image: `/images/projects/production/yellowriver-willowbrook.png`
 
-### Oakleaf  
-2,056 SF | 2 Bedrooms | 2.5 Bathrooms | 2-Car Garage  
-Image: `/images/projects/production/oakleaf.png`
+### The Meadowview 
+2,486 SF | 4-5 Bedrooms | 2.5 Bathrooms | 2-Car Garage 
+Image: `/images/projects/production/yellowriver-meadowview.png`
 
-- Entry-level design  
-- Perfect for first-time buyers  
-- Efficient layout with modern finishes  
-
-### The Grove  
-2,245 SF | 2 Bedrooms | 2.5 Bathrooms | 2-Car Garage + Storage  
-Image: `/images/projects/production/the-grove.png`
-
-- Enhanced storage  
-- Flexible interior spaces  
-- Great balance of size and functionality  
-
-### Timberline  
+### The Clearwater 
 2,740 SF | 4 Bedrooms | 2 Bathrooms | 2-Car Garage  
-Image: `/images/projects/production/timberline.png`
+Image: `/images/projects/production/yellowriver-clearwater.png`
 
-- Largest bedroom count  
-- Designed for established families
-- Ideal for hosting and multigenerational living  
+### The Fairwater 
+2,929 SF | 3-4 Bedrooms | 3.5 Bathrooms | 2-Car Garage  
+Image: `/images/projects/production/yellowriver-fairwater.png`
+
+### The Drift 
+3,002 SF | 4-5 Bedrooms | 3.5-4.5 Bathrooms | 2-Car Garage  
+Image: `/images/projects/production/yellowriver-drift.png`
 
 ## Included Interior Features
 

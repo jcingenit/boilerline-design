@@ -253,16 +253,25 @@ export function FrontmatterProjectDetailPage({ project }: FrontmatterProjectPage
                 <h2 className="text-3xl text-foreground mb-8">{section.title}</h2>
                 
                 {mainContent && (() => {
-                  // Parse content into blocks (paragraphs and lists)
+                  // Parse content into blocks (paragraphs, lists, and iframes)
                   const lines = mainContent.split('\n');
-                  const blocks: Array<{ type: 'paragraph' | 'list'; content: string }> = [];
-                  let currentBlock: { type: 'paragraph' | 'list'; content: string } | null = null;
+                  const blocks: Array<{ type: 'paragraph' | 'list' | 'iframe'; content: string }> = [];
+                  let currentBlock: { type: 'paragraph' | 'list' | 'iframe'; content: string } | null = null;
                   
                   for (const line of lines) {
                     const trimmed = line.trim();
                     const isBullet = trimmed.startsWith('-') || trimmed.startsWith('*');
+                    const isIframe = trimmed.startsWith('<iframe') && trimmed.includes('</iframe>');
                     
-                    if (isBullet) {
+                    if (isIframe) {
+                      // Save current block if exists
+                      if (currentBlock && currentBlock.content.trim()) {
+                        blocks.push(currentBlock);
+                        currentBlock = null;
+                      }
+                      // Add iframe as its own block
+                      blocks.push({ type: 'iframe', content: trimmed });
+                    } else if (isBullet) {
                       // Start or continue a list block
                       if (currentBlock?.type === 'list') {
                         currentBlock.content += '\n' + line;
@@ -303,7 +312,16 @@ export function FrontmatterProjectDetailPage({ project }: FrontmatterProjectPage
                   return (
                     <div className="prose prose-lg max-w-none text-muted-foreground">
                       {blocks.map((block, bIndex) => {
-                        if (block.type === 'list') {
+                        if (block.type === 'iframe') {
+                          // Render iframe embed
+                          return (
+                            <div 
+                              key={bIndex} 
+                              className="mb-6 rounded-xl overflow-hidden"
+                              dangerouslySetInnerHTML={{ __html: block.content }}
+                            />
+                          );
+                        } else if (block.type === 'list') {
                           // Render bullet list
                           const items = block.content.split('\n')
                             .filter(line => {
@@ -356,16 +374,25 @@ export function FrontmatterProjectDetailPage({ project }: FrontmatterProjectPage
                 {subsections.length > 0 && (
                   <div className="mt-8 space-y-8">
                     {subsections.map((subsection, subIndex) => {
-                      // Parse subsection content into blocks (paragraphs and lists)
+                      // Parse subsection content into blocks (paragraphs, lists, and iframes)
                       const subLines = subsection.content.split('\n');
-                      const subBlocks: Array<{ type: 'paragraph' | 'list'; content: string }> = [];
-                      let currentSubBlock: { type: 'paragraph' | 'list'; content: string } | null = null;
+                      const subBlocks: Array<{ type: 'paragraph' | 'list' | 'iframe'; content: string }> = [];
+                      let currentSubBlock: { type: 'paragraph' | 'list' | 'iframe'; content: string } | null = null;
                       
                       for (const line of subLines) {
                         const trimmed = line.trim();
                         const isBullet = trimmed.startsWith('-') || trimmed.startsWith('*');
+                        const isIframe = trimmed.startsWith('<iframe') && trimmed.includes('</iframe>');
                         
-                        if (isBullet) {
+                        if (isIframe) {
+                          // Save current block if exists
+                          if (currentSubBlock && currentSubBlock.content.trim()) {
+                            subBlocks.push(currentSubBlock);
+                            currentSubBlock = null;
+                          }
+                          // Add iframe as its own block
+                          subBlocks.push({ type: 'iframe', content: trimmed });
+                        } else if (isBullet) {
                           // Start or continue a list block
                           if (currentSubBlock?.type === 'list') {
                             currentSubBlock.content += '\n' + line;
@@ -408,7 +435,16 @@ export function FrontmatterProjectDetailPage({ project }: FrontmatterProjectPage
                           <h3 className="text-2xl text-foreground mb-4">{subsection.title}</h3>
                           <div className="prose prose-lg max-w-none text-muted-foreground">
                             {subBlocks.map((block, bIndex) => {
-                              if (block.type === 'list') {
+                              if (block.type === 'iframe') {
+                                // Render iframe embed
+                                return (
+                                  <div 
+                                    key={bIndex} 
+                                    className="mb-6 rounded-xl overflow-hidden"
+                                    dangerouslySetInnerHTML={{ __html: block.content }}
+                                  />
+                                );
+                              } else if (block.type === 'list') {
                                 // Render bullet list
                                 const items = block.content.split('\n')
                                   .filter(line => {

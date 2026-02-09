@@ -56,6 +56,8 @@ Natural materials, warm tones, and sculpted architectural forms create a refined
 
 Slayter Ridge is organized to balance openness with privacy across two levels.
 
+<iframe width="100%" height="640" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://puintd.viewin360.co/share/collection/7HtS5?logo=0&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=1"></iframe>
+
 ### Property Specs
 
 - Total Living Area: ~5,000 sq ft  
