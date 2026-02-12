@@ -145,12 +145,3 @@ Slayter Ridge integrates site-responsive design strategies that enhance comfort 
 
 The home follows a Cradle-to-Cradle philosophy — prioritizing materials that can be reused or recycled, modular construction assemblies, and long-life exterior systems to reduce future waste.
 
-## Schedule a Private Showing
-
-Interested in learning more about Slayter Ridge?
-
-Contact Boilerline Design Co. to schedule a private tour or request additional information.
-
-**Email:** info@boilerlinedesign.co  
-**Phone:** (123) 456-7890  
-
