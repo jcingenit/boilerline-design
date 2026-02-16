@@ -5,12 +5,12 @@ location: "Lilburn, Georgia"
 property_type: "Planned Residential Community"
 square_feet: "2,056–2,782"
 bedrooms: "2–4"
-bathrooms: "2–2.5"
+bathrooms: "2–5"
 builder: "Boilerline Development"
 status: "Proposed"
 year: 2026
 hero_image: "/images/projects/production/yellowriver.jpg"
-packet: "/packets/25-26-production.pdf"
+packet: "/images/projects/packets/25-26-production.pdf"
 project: "production"
 ---
 
@@ -19,7 +19,7 @@ project: "production"
 
 The Reserve at Yellow River is a thoughtfully planned residential community located along the scenic Yellow River in Lilburn, Georgia. Designed for first-time homebuyers and established families alike, the neighborhood blends modern homes with preserved natural landscapes, walkable streets, and family-centered amenities.
 
-Spanning 93 acres with 153 homesites, this Planned Unit Development offers flexible floorplans, inclusive design features, and a welcoming community atmosphere, all within convenient reach of greater Atlanta.
+Spanning 93 acres with 160 homesites, this Planned Unit Development offers flexible floorplans, inclusive design features, and a welcoming community atmosphere, all within convenient reach of greater Atlanta.
 
 ## Welcome to Lilburn
 
@@ -41,7 +41,7 @@ The Reserve at Yellow River prioritizes comfort, flexibility, and connection.
 
 ### Community Highlights
 
-- 153 homes across a preserved 93-acre site  
+- 160 homes across a preserved 93-acre site  
 - Three-phase development with parks delivered alongside homes  
 - Community pool, playgrounds, shaded gazebos, and landscaped green spaces  
 - Winding roads and natural grading that follow the existing landscape  
@@ -55,7 +55,7 @@ Neighborhood planning emphasizes privacy while encouraging everyday interaction 
 
 Each home is crafted to support modern lifestyles with open layouts, flexible spaces, and family-friendly features. Available floorplans range from approximately 2,034 to 2,782 square feet.
 
-### The Briawrood  
+### The Briarwood  
 2,268 SF | 3 Bedrooms | 2.5 Bathrooms | 2-Car Garage  
 Image: `/images/projects/production/yellowriver-briarwood.png`
 
@@ -119,7 +119,7 @@ These features help lower utility costs while creating healthier living environm
 
 The community HOA maintains landscaping and shared spaces, helping preserve long-term neighborhood value.
 
-Monthly HOA dues: $250
+Monthly HOA dues: $325
 
 Each home includes:
 
