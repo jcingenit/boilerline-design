@@ -78,29 +78,31 @@ export function FrontmatterProjectDetailPage({ project }: FrontmatterProjectPage
                 
                 {/* Property Specs */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                  {project.square_feet > 0 && (
+                  {(project.square_feet > 0 || (typeof project.square_feet === 'string' && project.square_feet)) && (
                     <div className="flex items-center gap-2">
                       <Ruler className="w-5 h-5 text-accent" />
                       <div>
-                        <div className="text-2xl font-bold text-foreground">{project.square_feet.toLocaleString()}</div>
+                        <div className="text-sm font-bold text-foreground">
+                          {typeof project.square_feet === 'number' ? project.square_feet.toLocaleString() : project.square_feet}
+                        </div>
                         <div className="text-sm text-muted-foreground">sq ft</div>
                       </div>
                     </div>
                   )}
-                  {project.bedrooms > 0 && (
+                  {(project.bedrooms > 0 || (typeof project.bedrooms === 'string' && project.bedrooms)) && (
                     <div className="flex items-center gap-2">
                       <Bed className="w-5 h-5 text-accent" />
                       <div>
-                        <div className="text-2xl font-bold text-foreground">{project.bedrooms}</div>
+                        <div className="text-sm font-bold text-foreground">{project.bedrooms}</div>
                         <div className="text-sm text-muted-foreground">Bedrooms</div>
                       </div>
                     </div>
                   )}
-                  {project.bathrooms > 0 && (
+                  {(project.bathrooms > 0 || (typeof project.bathrooms === 'string' && project.bathrooms)) && (
                     <div className="flex items-center gap-2">
                       <Bath className="w-5 h-5 text-accent" />
                       <div>
-                        <div className="text-2xl font-bold text-foreground">{project.bathrooms}</div>
+                        <div className="text-sm font-bold text-foreground">{project.bathrooms}</div>
                         <div className="text-sm text-muted-foreground">Bathrooms</div>
                       </div>
                     </div>

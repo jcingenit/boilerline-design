@@ -166,7 +166,6 @@ export function ProductionProjectsPage() {
         {/* Empty State */}
         {productionProjects.length === 0 && (
           <div className="text-center py-12">
-            <div className="text-6xl mb-4">🏆</div>
             <h3 className="text-2xl font-bold text-accent mb-2">No Production Projects Yet</h3>
             <p className="text-muted-foreground mb-6">
               We're preparing for upcoming competitions. Check back soon for our latest production projects!

@@ -79,6 +79,14 @@ Image: `/images/projects/production/yellowriver-fairwater.png`
 3,002 SF | 4-5 Bedrooms | 3.5-4.5 Bathrooms | 2-Car Garage  
 Image: `/images/projects/production/yellowriver-drift.png`
 
+### The Waterhaven 
+3,202 SF | 4-6 Bedrooms | 3.5-4.5 Bathrooms | 2-Car Garage  
+Image: `/images/projects/production/yellowriver-waterhaven.png`
+
+### The Silverbrook 
+3,306 SF | 4-6 Bedrooms | 3.5-5 Bathrooms | 2-Car Garage  
+Image: `/images/projects/production/yellowriver-silverbrook.png`
+
 ## Included Interior Features
 
 Homes come standard with:

@@ -73,31 +73,28 @@ Optional sustainable upgrades allow buyers to further personalize their home.
 Woodside offers four ranch-style homes ranging from 2,056 to 2,782 square feet — each crafted to support modern living with open layouts, natural light, and flexible spaces.
 
 ### The Oakleaf  
-Ranch | 2 Bed | 2.5 Bath | 2,056 sq ft  
+2 Bed | 2.5 Bath | 2,056 sq ft  
 Image: `/images/projects/production/oakridge-oakleaf.png`
 
 - HERS 58  
 - 2-Car Garage  
-- Ideal for first-time buyers or downsizers  
 
 ### The Grove  
-Ranch | 2 Bed | 2.5 Bath | 2,245 sq ft (+ Storage Garage)  
+2 Bed | 2.5 Bath | 2,245 sq ft
 Image: `/images/projects/production/oakridge-grove.png`
 
 - HERS 56  
 - 2-Car + Storage Garage  
-- Open gathering spaces with added storage flexibility  
 
 ### The Timberline  
-Ranch | 4 Bed | 2 Bath | 2,740 sq ft  
+4 Bed | 2 Bath | 2,740 sq ft  
 Image: `/images/projects/production/oakridge-timberline.png`
 
 - HERS 55  
 - 2-Car Garage  
-- Perfect for growing families  
 
 ### The Cedar  
-Ranch | 3 Bed | 2.5 Bath | 2,782 sq ft  
+3 Bed | 2.5 Bath | 2,782 sq ft  
 Image: `/images/projects/production/oakridge-cedar.png`
 
 - HERS 54  

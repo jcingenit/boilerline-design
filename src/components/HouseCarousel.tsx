@@ -141,7 +141,6 @@ function HouseCard({ house }: { house: HouseDesign }) {
       {/* House Info */}
       <div className="p-6">
         <h3 className="text-2xl font-bold text-accent mb-2">{house.name}</h3>
-        <p className="text-sm text-foreground mb-4">{house.type}</p>
         
         {/* Stats Grid */}
         <div className="grid grid-cols-2 gap-4 mb-4">

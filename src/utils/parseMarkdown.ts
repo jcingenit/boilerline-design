@@ -9,9 +9,9 @@ export interface FrontmatterProject {
   slug: string;
   location: string;
   property_type: string;
-  square_feet: number;
-  bedrooms: number;
-  bathrooms: number;
+  square_feet: number | string;
+  bedrooms: number | string;
+  bathrooms: number | string;
   builder: string;
   status: string;
   image?: string; // Hero image from frontmatter
