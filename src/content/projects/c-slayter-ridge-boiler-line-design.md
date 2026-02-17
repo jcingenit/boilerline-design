@@ -44,6 +44,8 @@ Slayter Ridge benefits from:
 
 This unique location blends peaceful lakeside living with convenient access to regional services and attractions.
 
+Information about the Miner's Cove communities can be found here: https://minerscovelakemartin.com/
+
 ## Design Concept: Oreum
 
 Oreum draws inspiration from raw ore; rugged on the surface, rich within.
